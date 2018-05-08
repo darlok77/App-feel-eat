@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="fr.phonegap.test1" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
+    </feature>
+    <name>test-phonegap2</name>
+    <description>
+       A blank PhoneGap app.
+   </description>
+    <author email="support@phonegap.com" href="http://phonegap.com">
+       PhoneGap Team
+   </author>
+    <content src="app/index.html" />
+    <access origin="*" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="android-minSdkVersion" value="16" />
+</widget>
