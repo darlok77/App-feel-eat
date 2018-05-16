@@ -10,22 +10,14 @@
  
     <title>AngularJS and Firebase Web App</title>
  
-    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
+<!--    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/signin/signin.css" rel="stylesheet">-->
     
-    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-    <link rel="stylesheet" href="app.css">
-    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
- 
-    <link href="justified-nav.css" rel="stylesheet">
+
  
 </head>
  
 <body ng-controller="HomeCtrl as ctrl">
-<pre id ="object">
-  {{ctrl.object | json}}
-</pre>
  
     <div class="container">
         <div class="jumbotron" style="padding-bottom:0px;">
@@ -39,6 +31,7 @@
          <button type="button" ng-click="logOut($event)" ng-show="showLogOut" class="btn btn-lg btn-primary btn-block">log Out</button>
          {{showLogOut}}
       </form>
+      <pre id ="users"></pre>
  
     </div>
  

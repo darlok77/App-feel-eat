@@ -9,13 +9,15 @@ angular.module('myApp.view2', ['ngRoute','cordovaGeolocationModule'])
   });
 }])
 
-.controller('View2Ctrl', function($scope,cordovaGeolocationService) {
-  $scope.test='1';
+.controller('View2Ctrl', function($scope,cordovaGeolocationService,$firebaseObject) {
+  $scope.test = 1;
+
+
   
   $scope.getCurrentPosition = function() {
-    $scope.test='2';
+    $scope.test = 2;
     cordovaGeolocationService.getCurrentPosition(function(position){
-      $scope.test='3';
+      $scope.test = 3;
         alert(
             'Latitude: '          + position.coords.latitude          + '\n' +
             'Longitude: '         + position.coords.longitude         + '\n' +
@@ -29,5 +31,6 @@ angular.module('myApp.view2', ['ngRoute','cordovaGeolocationModule'])
     });
     
 };
+  
 
 });

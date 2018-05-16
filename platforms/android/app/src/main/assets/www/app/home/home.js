@@ -33,7 +33,15 @@ var ref = firebase.database().ref().child("messages");
 
 .controller("HomeCtrl", function($scope, $firebaseObject) {
   
-
+  const rootRef = firebase.database().ref(); // database root ref
+  const refUsers = rootRef.child("users"); // ref a users field in database
+  
+      refUsers.on('value', function(snap){ //value = refresh all object
+        document.querySelector('#users').innerText = JSON.stringify(snap.val());
+        console.log( snap.val() ); 
+      }, function(err) { 
+        console.log( 'denied' ); 
+    });
   
   $scope.logOut = function(event) {
     event.preventDefault();  // To prevent form refresh
@@ -49,6 +57,7 @@ var ref = firebase.database().ref().child("messages");
       var auth = firebase.auth();
       var promise = auth.signInWithEmailAndPassword(username,password);
       promise.catch(function(e) { console.log(e.message); });
+    
   }
 
   $scope.signUp = function(event) {
@@ -74,9 +83,5 @@ var ref = firebase.database().ref().child("messages");
       
     }
   })
-  
-  const rootRef = firebase.database().ref();
-  const ref =  rootRef.child('object');
-  this.object = $firebaseObject(ref);
   
 });

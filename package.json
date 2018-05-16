@@ -1,6 +1,6 @@
 {
-    "name": "FEEL EAT",
-    "displayName": "FEEL EAT",
+    "name": "helloworld",
+    "displayName": "helloworld",
     "version": "1.0.0",
     "description": "it'a a mobile app for healthy food delivery",
     "main": "index.js",
@@ -20,13 +20,13 @@
         "update-index-async": "node -e \"var fs=require('fs'),indexFile='www/app/index-async.html',loaderFile='www/app/bower_components/angular-loader/angular-loader.min.js',loaderText=fs.readFileSync(loaderFile,'utf-8').split(/sourceMappingURL=angular-loader.min.js.map/).join('sourceMappingURL=bower_components/angular-loader/angular-loader.min.js.map'),indexText=fs.readFileSync(indexFile,'utf-8').split(/\\/\\/@@NG_LOADER_START@@[\\s\\S]*\\/\\/@@NG_LOADER_END@@/).join('//@@NG_LOADER_START@@\\n'+loaderText+'    //@@NG_LOADER_END@@');fs.writeFileSync(indexFile,indexText);\""
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/darlok77/App-feel-eat.git"
+        "type": "git",
+        "url": "git+https://github.com/darlok77/App-feel-eat.git"
     },
     "author": "Guillaume Dalleau",
     "license": "ISC",
     "bugs": {
-      "url": "https://github.com/darlok77/App-feel-eat/issues"
+        "url": "https://github.com/darlok77/App-feel-eat/issues"
     },
     "dependencies": {
         "cordova-android": "7.0.0",

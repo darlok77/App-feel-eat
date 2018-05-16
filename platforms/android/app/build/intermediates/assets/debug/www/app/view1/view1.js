@@ -13,13 +13,27 @@ angular.module('myApp.view1', ['ngRoute'])
 
   const rootRef = firebase.database().ref(); // database root ref
   const refObject = rootRef.child("object"); // ref a object field in database
+  const refUsers = rootRef.child("users"); // ref a users field in database
   const refHobbies = refObject.child("hobbie"); // ref a object field in hobbie
   
+  $scope.user = 1;
+  $scope.writeUserData = function(name, email) {
+    firebase.database().ref('users/' + $scope.user).set({
+      username: name,
+      email: email
+    });
+    $scope.user++;
+  };
   
   //sync a object change
   
   refObject.on('value', function(snap){ //value = refresh all object
     document.querySelector('#object').innerText = JSON.stringify(snap.val(),null, 4) ;// display in 4 line
+    console.log( snap.val() ); 
+  });
+  
+  refUsers.on('value', function(snap){ //value = refresh all object
+    document.querySelector('#users').innerText = JSON.stringify(snap.val());
     console.log( snap.val() ); 
   });
   
