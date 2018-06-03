@@ -1,0 +1,33 @@
+{
+  "name": "angular-cordova-onesignal",
+  "description": "AngularJS module that wraps onesignal-cordova-plugin",
+  "version": "0.1.1",
+  "main": "angular-cordova-onesignal.js",
+  "ignore": [
+    "sample",
+    "src",
+    "test",
+    ".bowerrc",
+    ".coveralls.yml",
+    ".gitignore",
+    ".jshintrc",
+    ".travis.yml",
+    "bower.json",
+    "package.json"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.30"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/Tekorius/Angular-Cordova-OneSignal",
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.1",
+    "commit": "63aa7176469cb8b67fa19c52474b07cdc102b0b2"
+  },
+  "_source": "https://github.com/Tekorius/Angular-Cordova-OneSignal.git",
+  "_target": "^0.1.1",
+  "_originalSource": "angular-cordova-onesignal",
+  "_direct": true
+}

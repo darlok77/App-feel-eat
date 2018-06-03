@@ -12,6 +12,9 @@
     },
     "org.apache.cordova.geolocation": {
       "PACKAGE_NAME": "fr.phonegap.test1"
+    },
+    "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "fr.phonegap.test1"
     }
   },
   "dependent_plugins": {}

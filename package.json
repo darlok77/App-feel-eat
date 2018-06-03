@@ -5,6 +5,7 @@
     "description": "it'a a mobile app for healthy food delivery",
     "main": "index.js",
     "scripts": {
+        "go": "http-server -a localhost -p 8000 -c-1 ./www/app",
         "postinstall": "bower install",
         "update-deps": "npm update",
         "postupdate-deps": "bower update",
@@ -29,9 +30,11 @@
         "url": "https://github.com/darlok77/App-feel-eat/issues"
     },
     "dependencies": {
+        "angular-stripe": "^5.0.0",
+        "angularfire": "^2.3.0",
         "cordova-android": "7.0.0",
-        "org.apache.cordova.geolocation": "^0.3.6",
-        "angularfire": "^2.3.0"
+        "onesignal-cordova-plugin": "^2.4.0",
+        "org.apache.cordova.geolocation": "^0.3.6"
     },
     "devDependencies": {
         "bower": "^1.7.7",
@@ -49,7 +52,8 @@
             "android"
         ],
         "plugins": {
-            "org.apache.cordova.geolocation": {}
+            "org.apache.cordova.geolocation": {},
+            "onesignal-cordova-plugin": {}
         }
     }
 }

@@ -1,0 +1,114 @@
+<!-- les passge commenter seront utililiser pour le front-->
+
+
+<div id="personalInfoDelivery" class="row">
+  <div class="center">
+    <img style="max-width:5%" src="../components/asset/img/perso.png">
+
+    <h1>Information Profil</h1>
+    <img class="img-fluid test" src="../components/asset/img/test.PNG"/>
+    <p>modifier</p>
+  </div>
+
+  <!--<div style="margin-left: 20%">
+<div class="input-file-container">
+<label for="my-file" class="input-file-trigger" tabindex="0">Modifier</label>
+<input class="input-file" id="my-file" type="file" ng-click="uploadFile()">
+</div>
+</div>-->
+  <!--{{file}}-->
+
+  <div class="margLeft20">
+    <div class="margTopBot">
+      <label>PRENOM</label>
+      <p>bob</p>
+    </div>
+    <div class="margTopBot">
+      <label>NOM</label>
+      <p>bob</p>
+    </div>
+    <div class="margTopBot">
+      <label>MAIL</label>
+      <p id="mailP" ng-if="!isUpdateMail">{{mail}}</p> <!-- j'utilise le scope de angular pour teste sans angular commenter cette ligne et decommenter la suivante-->
+      <!--<p id="mailP" ng-if="!isUpdateMail">bla@bla.fr</p>-->
+      <input id="mailInput" type="text" ng-model="mail" ng-if="isUpdateMail">
+      <span  class="updateImg" ng-click="updateMail()">modifier</span>
+    </div>
+    <div class="margTopBot">
+      <label>N°SIRET</label>
+      <p>154954512</p>
+    </div>
+    <div id='test'></div> <!--ici je genere les etoile dans mon service angular elles apparaitront pas car il y a pas angular avec cette page--> 
+  </div>
+  <button type="button" class="btnValidate">log In</button>
+</div>
+
+
+<style type="text/css">
+  #personalInfoDelivery{
+    background-color:#7bb194;
+    color: white;
+  }
+
+
+  .listeEtoile ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .listeEtoile ul li {
+    display:inline-block;
+    width: 16px;
+    text-align: left;
+    list-style-type: none;
+  }
+  .listeEtoile ul li img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .test{
+    border-radius :50%;
+    padding:20px;
+    max-width:30%
+  }
+
+  .input-file-container {
+    position: relative;
+    display: inline-block
+  }
+  .input-file-trigger {
+    display: block;
+    padding: 14px 45px;
+    transition: all .4s;
+  }
+  .input-file {
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .margTopBot{
+    margin-bottom: 10px;
+    margin-top: 10px; 
+  }
+  .btnValidate{
+    margin-top: 10px;
+    width: 65%;
+    color:#2c4b43; 
+    display: block;
+    margin : auto;
+    margin-bottom: 10%;
+  }
+  .center{
+    text-align: center
+  }
+  .margLeft20{
+    margin-left: 20%
+  }
+  .updateImg{
+    font-style:italic;
+    font-size:small
+  }
+</style>

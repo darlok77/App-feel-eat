@@ -1,0 +1,86 @@
+<div id="personalInfoDelivery" class="row">
+  <div style="text-align: center">
+    <img style="max-width:5%" src="../components/asset/img/perso.png">
+
+    <h1>Information Profil</h1>
+    <!-- <input id="my-file" type="file" ng-click="uploadFile()">-->
+    <img class="img-fluid test" src="../components/asset/img/test.PNG"/>
+    <div class="input-file-container">
+      <input class="input-file" id="my-file" type="file" ng-click="uploadFile()">
+      <label for="my-file" class="input-file-trigger" tabindex="0">Modifier</label>
+    </div>
+    {{file}}
+  </div>
+  <div style="margin-left: 20%">
+    <div>
+      <label>prénom</label>
+      <p>bob</p>
+    </div>
+    <div>
+      <label>prénom</label>
+      <p>bob</p>
+    </div>
+    <div>
+      <label>mail</label>
+      <p id="mailP" ng-if="!isUpdateMail">{{mail}}</p>
+      <input id="mailInput" type="text" ng-model="mail" ng-if="isUpdateMail">
+      <span  style="font-style:italic;" ng-click="updateMail()">modifier</span>
+    </div>
+    <div>
+      <label>prénom</label>
+      <p>bob</p>
+    </div>
+    <div id='A1'></div>
+    <button type="button" class="champColor">log In</button>
+  </div>
+
+</div>
+<style type="text/css">
+  #personalInfoDelivery{
+    background-color:#7bb194;
+    color: white
+  }
+
+
+  .listeEtoile ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .listeEtoile ul li {
+    display:inline-block;
+    width: 16px;
+    text-align: left;
+    list-style-type: none;
+  }
+  .listeEtoile ul li img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .test{
+    border-radius :50%;
+    padding:20px;
+    max-width:30%
+  }
+
+  .input-file-container {
+    position: relative;
+    width: 225px;
+  }
+  .input-file-trigger {
+    display: block;
+    padding: 14px 45px;
+    transition: all .4s;
+    cursor: pointer;
+  }
+  .input-file {
+    position: absolute;
+    top: 0; left: 0;
+    width: 225px;
+    padding: 14px 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+</style>
