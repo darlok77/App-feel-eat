@@ -12,24 +12,15 @@ angular.module('myApp.home', ['ngRoute'])
     });
 }])
  
-// Home controller
-/*.controller('HomeCtrl', ['$scope','$firebaseArray',function($scope,$firebaseArray) {
- 
 
+/*.factory('UserLog', function(){
+    return {
+      user: function () {
+        return firebaseUser;
+      }
+    };
+})*/
 
-var ref = firebase.database().ref().child("messages");
-  // create a synchronized array
-  $scope.messages = $firebaseArray(ref);
-  // add new items to the array
-  // the message is automatically added to our Firebase database!
-  $scope.addMessage = function() {
-    $scope.messages.$add({
-      text: $scope.newMessageText
-    });
-  };
-  
-  
-}]);*/
 
 .controller("HomeCtrl", function($scope, $firebaseObject) {
   
@@ -47,6 +38,7 @@ var ref = firebase.database().ref().child("messages");
       var auth = firebase.auth();
       var promise = auth.signInWithEmailAndPassword(username,password);
       promise.catch(function(e) { console.log(e.message); });
+      window.location.href = "#!/customerHome";
     
   }
 

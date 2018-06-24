@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\workspaces\\workspace_angular\\test - Copie\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\workspaces\\workspace_angular\\inte2\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
+                {
+                    "source": "C:\\workspaces\\workspace_angular\\inte2\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "159,55,100",
+                        "endColumns": "63,44,58",
+                        "endOffsets": "218,95,154"
+                    },
+                    "to": {
+                        "startLines": "83,84,104",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "4669,4733,7193",
+                        "endColumns": "63,44,58",
+                        "endOffsets": "4728,4773,7247"
+                    }
+                },
                 {
                     "source": "C:\\Users\\guillaume\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\f1685f2afdd069dade6ba18f6099fb01\\res\\values\\values.xml",
                     "from": {
@@ -15,9 +32,9 @@
                     "to": {
                         "startLines": "81,93",
                         "startColumns": "4,4",
-                        "startOffsets": "4531,5825",
+                        "startOffsets": "4531,5818",
                         "endColumns": "67,166",
-                        "endOffsets": "4594,5987"
+                        "endOffsets": "4594,5980"
                     }
                 },
                 {
@@ -32,26 +49,9 @@
                     "to": {
                         "startLines": "2,3,4,5,6,7,8,9,85,86,87,88,89,90,91,92,94,95,96,97,98,99,100,101,102",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,195,275,365,455,535,616,696,4785,4890,5071,5196,5303,5483,5606,5722,5992,6180,6285,6466,6591,6766,6914,6977,7039",
+                        "startOffsets": "105,195,275,365,455,535,616,696,4778,4883,5064,5189,5296,5476,5599,5715,5985,6173,6278,6459,6584,6759,6907,6970,7032",
                         "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78",
-                        "endOffsets": "190,270,360,450,530,611,691,771,4885,5066,5191,5298,5478,5601,5717,5820,6175,6280,6461,6586,6761,6909,6972,7034,7113"
-                    }
-                },
-                {
-                    "source": "C:\\workspaces\\workspace_angular\\test - Copie\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "166,55,107",
-                        "endColumns": "63,51,58",
-                        "endOffsets": "225,102,161"
-                    },
-                    "to": {
-                        "startLines": "83,84,104",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "4669,4733,7200",
-                        "endColumns": "63,51,58",
-                        "endOffsets": "4728,4780,7254"
+                        "endOffsets": "190,270,360,450,530,611,691,771,4878,5059,5184,5291,5471,5594,5710,5813,6168,6273,6454,6579,6754,6902,6965,7027,7106"
                     }
                 },
                 {
@@ -67,10 +67,10 @@
                     "to": {
                         "startLines": "10,11,14,16,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,82,105,106,107,112,115,120,122,123",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "776,845,1068,1199,2830,2900,2968,3040,3110,3171,3232,3293,3355,3419,3481,3542,3610,3710,3770,3836,3909,3978,4035,4087,4149,4221,4297,4332,4367,4401,4436,4599,7259,7330,7447,7714,8007,8274,8470,8542",
+                        "startOffsets": "776,845,1068,1199,2830,2900,2968,3040,3110,3171,3232,3293,3355,3419,3481,3542,3610,3710,3770,3836,3909,3978,4035,4087,4149,4221,4297,4332,4367,4401,4436,4599,7252,7323,7440,7707,8000,8267,8463,8535",
                         "endLines": "10,11,14,16,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,82,105,106,110,112,118,120,122,123",
                         "endColumns": "68,62,57,73,69,67,71,69,60,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,34,34,33,34,34,69,70,116,12,109,12,128,71,66",
-                        "endOffsets": "840,903,1121,1268,2895,2963,3035,3105,3166,3227,3288,3350,3414,3476,3537,3605,3705,3765,3831,3904,3973,4030,4082,4144,4216,4292,4327,4362,4396,4431,4466,4664,7325,7442,7643,7819,8203,8398,8537,8604"
+                        "endOffsets": "840,903,1121,1268,2895,2963,3035,3105,3166,3227,3288,3350,3414,3476,3537,3605,3705,3765,3831,3904,3973,4030,4082,4144,4216,4292,4327,4362,4396,4431,4466,4664,7318,7435,7636,7812,8196,8391,8530,8597"
                     }
                 },
                 {
@@ -85,9 +85,9 @@
                     "to": {
                         "startLines": "12,13,15,80,111,113,114,119,121",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "908,997,1126,4471,7648,7824,7946,8208,8403",
+                        "startOffsets": "908,997,1126,4471,7641,7817,7939,8201,8396",
                         "endColumns": "88,70,72,59,65,121,60,65,66",
-                        "endOffsets": "992,1063,1194,4526,7709,7941,8002,8269,8465"
+                        "endOffsets": "992,1063,1194,4526,7702,7934,7995,8262,8458"
                     }
                 },
                 {
@@ -102,53 +102,9 @@
                     "to": {
                         "startLines": "103",
                         "startColumns": "4",
-                        "startOffsets": "7118",
+                        "startOffsets": "7111",
                         "endColumns": "81",
-                        "endOffsets": "7195"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\guillaume\\Desktop\\test1\\test\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\guillaume\\Desktop\\test1\\test\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "-1,2,-1",
-                        "startColumns": "-1,4,-1",
-                        "startOffsets": "-1,55,-1",
-                        "endColumns": "-1,51,-1",
-                        "endOffsets": "-1,102,-1"
-                    },
-                    "to": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,119,171",
-                        "endColumns": "63,51,58",
-                        "endOffsets": "114,166,225"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\guillaume\\Desktop\\test1\\test - Copie\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\guillaume\\Desktop\\test1\\test - Copie\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "166,55,107",
-                        "endColumns": "63,51,58",
-                        "endOffsets": "225,102,161"
-                    },
-                    "to": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,119,171",
-                        "endColumns": "63,51,58",
-                        "endOffsets": "114,166,225"
+                        "endOffsets": "7188"
                     }
                 }
             ]

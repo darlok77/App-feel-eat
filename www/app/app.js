@@ -18,8 +18,22 @@ angular.module('myApp', [
   'myApp.view1',
   'myApp.view2',
   'myApp.view3',
-  'myApp.home',
+  'myApp.orderToCustomers',
+  'myApp.login',
+  'myApp.forgotMdp',
+  'myApp.orderToResto',
+  'myApp.profilPage',
+  'myApp.customerHome',
+  'myApp.customerSearch',
+  'myApp.paymentMethod',
+  'myApp.monResto',
+  'myApp.orderHistory',
+  'myApp.cardChange', 
+  'myApp.recapOrder',
+  'myApp.userRegister',
+  'myApp.chooseStatus',
   'firebase',
+  
   //'angular-stripe'
  // 'myApp.version'
 ])
@@ -27,5 +41,5 @@ angular.module('myApp', [
   $locationProvider.hashPrefix('!');
 
  // $routeProvider.otherwise({redirectTo: '/view1'});
-  $routeProvider.otherwise({redirectTo: '/home'});
+  $routeProvider.otherwise({redirectTo: '/chooseStatus'});
 }]);

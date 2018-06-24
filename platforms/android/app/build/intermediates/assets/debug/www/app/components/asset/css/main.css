@@ -13,17 +13,26 @@ src: url("../fonts/neutra-text-alt/neutra-text-bold-5871e1605afa2.woff") format(
     src:url("../fonts/Futura-Medium.woff")format('woff');
 }
 html,body{
+    font-family: 'FuturaMedium';
     height: 100%;
 }
+
 #cardChangePage {
     text-transform: uppercase;
     background-color: #f8f8e7;
     color:#2c4b43;
     font-family: 'FuturaMedium';
-    
+
+}
+#restoChangePage {
+    text-transform: uppercase;
+    background-color: #f8f8e7;
+    color:#2c4b43;
+    font-family: 'FuturaMedium';
+    height: 100%;
 }
 
-.headercard{
+.headerPrevious,.headerNext{
     
     text-align: center;
     margin-bottom: 40px;
@@ -32,19 +41,32 @@ html,body{
     font-size: 30px;
     
 }
-.headercard a{
+.headerPrevious a{
     display: inline-flex;
     float: left;
     padding-top: 10px;
     margin-left: 10px;    
 }
 
-.headercard h1{  
+.headerPrevious h1{  
     font-size: 20px;
     font-weight: 450;
     margin-top: 13px
     
 
+}
+.headerNext h1{  
+    font-size: 20px;
+    font-weight: 450;
+    margin-top: 13px
+    
+
+}
+.headerNext a{
+    display: inline-flex;
+    float:right;
+    padding-top: 10px;
+    margin-left: 10px;    
 }
 .bodycard h2{
     font-family:"NeutraTextBold";
@@ -54,14 +76,14 @@ html,body{
    
 }
 
-.bodycard h3{
+.bodycard h3, .restoDesc h3,.customerSearchBody h3{
     background:url("../img/rond.png") repeat-x 0 63%;
     background-size: 6px;
     margin-top: 20px;
     
 }
 /*Pour la border on isole le texte*/
-.bodycard h3 span{
+.bodycard h3 span,.restoDesc h3 span,.customerSearchBody h3{
     display:inline-block;
     padding-left:10px;
     padding-right:10px;
@@ -75,7 +97,25 @@ html,body{
     text-align: center;
     padding-left: 60px;
     padding-right: 60px;
+    background-color: #f8f8e7;
     
+}
+.restoDesc{
+    text-align: center;
+    display: block; 
+    float:right;
+}
+
+.restoEdit textarea, .restoEdit p{
+    font-size: 15px;
+    margin-bottom: 0;
+    border-left: 6px solid #2c4b43;
+    background-color: #f8f8e7;
+
+}
+
+#restoEditPSpace{
+    margin-top: -7px;
 }
 
 .arrow{
@@ -85,7 +125,7 @@ html,body{
     padding-bottom: 10px;
     padding-left: 2px;
 }
-.bodycard li span{
+.bodycard li span,.addMenuBody li span{
     display: inline-block;
     background-color: #f8f8e7;
     padding-right: 5px;
@@ -94,9 +134,10 @@ html,body{
     display: inline-block;
     float: right;
     padding-left: 5px;
+
     
 }
-.bodycard li{
+.bodycard li,.addMenuBody li{
     margin-bottom: -10px;
     background: url(../img/rond.png) repeat-x 0 50%;
     background-size: 6px;
@@ -121,10 +162,8 @@ html,body{
     background-color: #7bb194;
     position: fixed;
     bottom:0;
-    width: 100%;
-    
-    
-    
+    width: 100%
+   
 }
 
 #navBar ul{
@@ -187,10 +226,368 @@ html,body{
 
 }
 .champColor{
-    color:#2c4b43;
+    
     background-color:#f8f8e7;
     border-style: hidden;
     margin-bottom: 10px;
+    width: 15em;
+    font-size: 20px;
+    font-weight: bold;
+    color:#38463D;
+}
+
+#infoDeliver{
+    text-transform: uppercase;
+    background-color:#7bb194;
+    color:#f8f8e7;
+    font-family: 'FuturaMedium'; 
+    font-weight: bold;
+    height: 100%;
+    position: relative;
+    
+    
+}
+.infoDeliverBody{
+    text-align: center;
+
+}
+.infoDeliverBody button{
+    display: flex;
+    float:right;
+    background-color:#f8f8e7;
+    color:#2c4b43;
+    border: 0;
+}
+.infoDeliverBody a{
+    display: flex;
+    float:left;
+}
+.infoDeliverBody p{
+    font-size: 10px;
+}
+.infoDeliverBody h2{
+    font-size: 15px;
+}
+#notifLivreur{
+    text-align: center;
+    color: #f8f8e7;
+    background-color: #38463D;
+    font-family: "FuturaMedium";
+    text-transform: uppercase;
+}
+.notifLivreurBody h3{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+#customerHome{
+    font-family:'FuturaMedium'; 
+}
+.customerHomeHeader{
+    background-color: #7BB194;
+}
+.customerHomeHeader a{
+  color:#f8f8e7;   
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-bottom: 20px;
+}
+.customerHomeBody{
+    background-color: #f8f8e7;
+}
+.customerHomeBody h3{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #7BB194;
+    font-size: 20px;
+    font-weight: bold;
+}
+.customerHomeBody p{
+    padding-left: 40%;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.customerHomeSugg{
+    margin-bottom: 50px;
+    font-weight: 200;
+}
+.customerHomeCateg{
+    display: inline-flex;
+    float:right;
+    padding-top: 10px;
+    margin-left: 10px;   
+}
+.customerHomeAdresse{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.customerSearchHeader{
+    background-color: #f8f8e7;
+}
+.customerSearchPrevious{
+    display: inline-flex;
+    float:left;
+    padding-top: 10px;
+    margin-left: 10px;   
+}
+.customerSearchBody{
+    background-color: #f8f8e7;
+    text-align: center;
+}
+.restoDescCustomer{
     margin-top: 10px;
-    width: 15em;       
+    font-size: 10px;
+    border-left: 6px solid #2c4b43;
+    background-color: #f8f8e7;
+    text-align: left;
+}
+#RecapOrder{
+    background-color: #7BB194;
+    display: inline-block;
+    color:#38463D;
+
+
+
+}
+.bodyRecapOrder h2{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.bodyRecapOrder h3{
+    font-size: 10px;
+    height: 100%;
+}
+.bodyRecapOrder a{
+    font-size: 10px;
+    color: #38463D;
+    
+
+}
+.previous{
+   padding-left: 20px;
+}
+.thanksContent{
+    background-color: #f8f8e7;
+    text-align: center;
+}
+.thanksContent p{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.thanksContent button{
+    color: #f8f8e7;
+    background-color:#38463D; 
+}
+.reOrderBody{
+    margin-bottom: 10%;
+    
+}
+.connectPage2{
+    text-transform: uppercase;
+    background-color:#7bb194;
+    color:#f8f8e7;
+    font-family: 'FuturaMedium'; 
+    height: 100%;
+    padding-top
+}
+
+
+.connectPage2 h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #f8f8e7;
+}
+.connectPage2 h2{
+    color: #f8f8e7;
+    font-size: 15px;
+    border-bottom: 2px dotted;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.connectPage2 p{
+    color: #2c4b43;
+    text-transform: none;
+    font-size: 10px;
+}
+         
+.orderHistoricHeader{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+.orderHistory{
+    background-color: #f8f8e7;
+}
+.reOrder{
+    padding-top: 20px;
+    padding-left: 30px;
+    
+}
+.reOrder img{
+    width:100%;
+}
+.reOrderBody{
+    background-color: #38463D;
+    color:#f8f8e7;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+.reOrderBody h2{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.reOrderBody h3{
+    border-bottom: 2px dotted;
+    border-color:#f8f8e7;
+}
+.reOrderBody p{
+    font-size: 10px;
+    margin-left: 15px; 
+    line-height: 0;
+}
+.reOrderBody button{
+    margin-top: 10px;
+    margin-left: 15px;
+    background-color: #f8f8e7;
+    border-radius: 15px;
+    color: #38463D;
+}
+.margLeft20{
+    margin-left: 20%
+}
+.updateImg{
+    font-style:italic;
+    font-size:small
+}
+#personalInfoDelivery{
+    background-color:#7bb194;
+    color: white;
+}
+
+
+.listeEtoile ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.listeEtoile ul li {
+    display:inline-block;
+    width: 16px;
+    text-align: left;
+    list-style-type: none;
+}
+.listeEtoile ul li img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.test{
+    border-radius :50%;
+    padding:20px;
+}
+
+.input-file-container {
+    position: relative;
+    display: inline-block
+}
+.input-file-trigger {
+    display: block;
+    padding: 14px 45px;
+    transition: all .4s;
+}
+.input-file {
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.margTopBot{
+    margin-bottom: 10px;
+    margin-top: 10px; 
+}
+.btnValidate{
+    margin-top: 10px;
+    width: 65%;
+    color:#2c4b43; 
+    display: block;
+    margin : auto;
+    margin-bottom: 10%;
+}
+.livraisonDisplay a{
+    padding-left: 20px;
+}
+.listeOrder{
+    padding-left: 20px;
+}
+.bordureHeure{
+    border: 2px solid;
+    border-color:#f8f8e7; 
+    font-weight: bold;
+}
+.bottomOrder{
+    background-color: #38463D;
+    color: #f8f8e7;
+    text-transform: uppercase;
+}
+.bottomOrder h2{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 5px;
+
+}
+.addMenu{
+    background-color: #38463D;
+}
+.imgProduct{
+    width: 100%;
+}
+.addMenuHeader{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.addMenuBody{
+    background-color: #f8f8e7;
+    color: #38463D;
+    padding-bottom: 20px
+}
+.addMenuBody h2{
+    margin-bottom:10px;
+}
+.addMenuFooter{   
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: right;
+}
+.addMenuFooter button{
+    margin-right: 5px;
+}
+.champColor2{
+    
+    background-color:#f8f8e7;
+    border-style: hidden;
+    margin-bottom: 10px;
+    width:45%;
+    font-size: 20px;
+    font-weight: bold;
+    color:#38463D;
+}
+.filtersBody li{
+    background-color: #38463D;
+    color: #f8f8e7;
+    text-align: center;
 }

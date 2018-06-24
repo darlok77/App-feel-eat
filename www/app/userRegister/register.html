@@ -1,0 +1,25 @@
+
+<div class="container-fluid connectPage" >
+
+  <div class="row connectPage">
+    <div class="col-md" id="login">
+      <h1>S'inscrire</h1>
+      <input type="text" class="champColor" ng-model="user.firstname" id="prenom" placeholder="  Prénom">
+      <input type="text" class="champColor" ng-model="user.lastname" id="nom" placeholder="  Nom">
+      <!-- ng if role resto-->
+      <input type="text" class="champColor" ng-model="user.restaurant" id="restaurantName" placeholder="  Nom de votre restaurant">
+      <input type="text" class="champColor" ng-model="user.siret" id="siretNumber" placeholder="  N° Siret">
+      <label id="siretJustify">Justificatif</label>
+      <input type="file" class="champColor" id="siretJustify">
+      <input type="text" class="champColor" ng-model="user.postalAdress." id="postalAdress" placeholder="  Adresse postale">
+      <input type="text" class="champColor" ng-model="user.email" id="email" placeholder="  Email">
+      <input type="text" class="champColor" ng-model="user.phoneNumber" id="phoneNumber" placeholder="  Tel portable">
+      <input type="password" class="champColor" ng-model="user.password" id="password" placeholder="  Mot de passe">
+      <input type="text" class="champColor" ng-model="user.confirmPassword" id="confirmPassword" placeholder="  Confirmation mot de passe">
+
+      <input class="champColor" type="submit" value="Valider">
+      <p>Vous avez déjà un compte ?</p> 
+      <button type="button" ng-click="signUp($event)" class="btn btn-lg btn-primary btn-block">Sign Up</button>
+    </div>    
+  </div>
+</div>

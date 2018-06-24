@@ -1,4 +1,4 @@
-#Sat May 19 18:36:49 CEST 2018
-base.0=C\:\\workspaces\\workspace_angular\\test - Copie\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Wed Jun 20 21:10:51 CEST 2018
+base.0=C\:\\workspaces\\workspace_angular\\inte2\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 renamed.0=classes.dex
-file.0=C\:\\workspaces\\workspace_angular\\test - Copie\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex
+file.0=C\:\\workspaces\\workspace_angular\\inte2\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex

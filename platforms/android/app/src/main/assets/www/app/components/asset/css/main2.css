@@ -1,0 +1,381 @@
+
+@font-face {
+font-family: 'NeutraText';
+src: url("../fonts/neutra-text-alt/neutra-text-alt-587261020eccb.woff") format('woff');
+}
+@font-face {
+font-family: 'NeutraTextBold';
+src: url("../fonts/neutra-text-alt/neutra-text-bold-5871e1605afa2.woff") format('woff');
+}
+
+@font-face{
+    font-family:'FuturaMedium';
+    src:url("../fonts/Futura-Medium.woff")format('woff');
+}
+html,body{
+    font-family: 'FuturaMedium';
+    height: 100%;
+
+}
+
+#cardChangePage {
+    text-transform: uppercase;
+    background-color: #f8f8e7;
+    color:#2c4b43;
+    font-family: 'FuturaMedium';
+
+}
+#restoChangePage {
+    text-transform: uppercase;
+    background-color: #f8f8e7;
+    color:#2c4b43;
+    font-family: 'FuturaMedium';
+    height: 100%;
+}
+
+.headerPrevious,.headerNext{
+    
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: ;
+    text-transform: uppercase;
+    font-size: 30px;
+    
+}
+.headerPrevious a{
+    display: inline-flex;
+    float: left;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.headerPrevious h1{  
+    font-size: 20px;
+    font-weight: 450;
+    margin-top: 13px
+    
+
+}
+.headerNext h1{  
+    font-size: 20px;
+    font-weight: 450;
+    margin-top: 13px
+    
+
+}
+.headerNext a{
+    display: inline-flex;
+    float:right;
+    padding-top: 10px;
+    margin-left: 10px;    
+}
+.bodycard h2{
+    font-family:"NeutraTextBold";
+    text-align:left;
+    font-weight: bold;
+    font-size: 25px;
+   
+}
+
+.bodycard h3, .restoDesc h3,.customerSearchBody h3{
+    background:url("../img/rond.png") repeat-x 0 63%;
+    background-size: 6px;
+    margin-top: 20px;
+    
+}
+/*Pour la border on isole le texte*/
+.bodycard h3 span,.restoDesc h3 span,.customerSearchBody h3{
+    display:inline-block;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:15px;
+    font-weight: bold;
+    background-color: #f8f8e7;
+}
+
+.bodycard{
+    
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #f8f8e7;
+    
+}
+.restoDesc{
+    text-align: center;
+    display: block; 
+    float:right;
+}
+
+.restoEdit textarea, .restoEdit p{
+    font-size: 15px;
+    margin-bottom: 0;
+    border-left: 6px solid #2c4b43;
+    background-color: #f8f8e7;
+
+}
+
+#restoEditPSpace{
+    margin-top: -7px;
+}
+
+.arrow{
+    margin-bottom: 10px;
+}
+.pen{
+    padding-bottom: 10px;
+    padding-left: 2px;
+}
+.bodycard li span{
+    display: inline-block;
+    background-color: #f8f8e7;
+    padding-right: 5px;
+}
+.price{
+    display: inline-block;
+    float: right;
+    padding-left: 5px;
+
+    
+}
+.bodycard li{
+    margin-bottom: -10px;
+    background: url(../img/rond.png) repeat-x 0 50%;
+    background-size: 6px;
+}
+.imgResto{
+    padding-bottom: 20px;
+}
+.bodycard li{
+    text-align: left;
+    
+}
+
+
+.addFood{
+    font-weight: bold;
+    color:#2c4b43;
+    
+}  
+
+ 
+#navBar{
+    background-color: #7bb194;
+    position: fixed;
+    bottom:0;
+    width: 100%
+   
+}
+
+#navBar ul{
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+
+#navBar ul li{
+    display: inline-block;
+    position: relative;
+    
+    
+}
+.middle{
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.bottom{
+    padding-bottom: 40px;
+}
+
+.connectPage{
+    text-transform: uppercase;
+    background-color:#7bb194;
+    color:#f8f8e7;
+    font-family: 'FuturaMedium'; 
+    height: 100%;
+    
+}
+
+
+.connectPage h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.connectPage h2{
+    color: #2c4b43;
+    font-size: 15px;
+    border-bottom: 2px dotted;
+    font-weight: bold;
+}
+
+.connectPage p{
+    color: #2c4b43;
+    text-transform: none;
+    font-size: 10px;
+}
+
+#login{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70%;
+    
+
+}
+.champColor{
+    
+    background-color:#f8f8e7;
+    border-style: hidden;
+    margin-bottom: 10px;
+    width: 15em;
+    font-size: 20px;
+    font-weight: bold;
+    color:#38463D;
+}
+
+#infoDeliver{
+    text-transform: uppercase;
+    background-color:#7bb194;
+    color:#f8f8e7;
+    font-family: 'FuturaMedium'; 
+    font-weight: bold;
+    height: 100%;
+    position: relative;
+    
+}
+.infoDeliverBody{
+    text-align: center;
+
+}
+.infoDeliverBody button{
+    display: flex;
+    float:right;
+    background-color:#f8f8e7;
+    color:#2c4b43;
+    border: 0;
+}
+.infoDeliverBody a{
+    display: flex;
+    float:left;
+}
+.infoDeliverBody p{
+    font-size: 10px;
+}
+.infoDeliverBody h2{
+    font-size: 15px;
+}
+#notifLivreur{
+    text-align: center;
+    color: #f8f8e7;
+    background-color: #38463D;
+    font-family: "FuturaMedium";
+    text-transform: uppercase;
+}
+.notifLivreurBody h3{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+#customerHome{
+    font-family:'FuturaMedium'; 
+}
+.customerHomeHeader{
+    background-color: #7BB194;
+}
+.customerHomeHeader a{
+  color:#f8f8e7;   
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-bottom: 20px;
+}
+.customerHomeBody{
+    background-color: #f8f8e7;
+}
+.customerHomeBody h3{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #7BB194;
+    font-size: 20px;
+    font-weight: bold;
+}
+.customerHomeBody p{
+    padding-left: 40%;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.customerHomeSugg{
+    margin-bottom: 50px;
+    font-weight: 200;
+}
+.customerHomeCateg{
+    display: inline-flex;
+    float:right;
+    padding-top: 10px;
+    margin-left: 10px;   
+}
+.customerHomeAdresse{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.customerSearchHeader{
+    background-color: #f8f8e7;
+}
+.customerSearchPrevious{
+    display: inline-flex;
+    float:left;
+    padding-top: 10px;
+    margin-left: 10px;   
+}
+.customerSearchBody{
+    background-color: #f8f8e7;
+    text-align: center;
+}
+.restoDescCustomer{
+    margin-top: 10px;
+    font-size: 10px;
+    border-left: 6px solid #2c4b43;
+    background-color: #f8f8e7;
+    text-align: left;
+}
+.connectPage2{
+    text-transform: uppercase;
+    background-color:#7bb194;
+    color:#f8f8e7;
+    font-family: 'FuturaMedium'; 
+    height: 100%;
+    padding-top
+}
+
+
+.connectPage2 h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #f8f8e7;
+}
+.connectPage2 h2{
+    color: #f8f8e7;
+    font-size: 15px;
+    border-bottom: 2px dotted;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.connectPage2 p{
+    color: #2c4b43;
+    text-transform: none;
+    font-size: 10px;
+}
+         

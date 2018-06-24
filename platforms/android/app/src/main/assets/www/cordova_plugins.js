@@ -1,6 +1,14 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
   {
+    "id": "onesignal-cordova-plugin.OneSignal",
+    "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+    "pluginId": "onesignal-cordova-plugin",
+    "clobbers": [
+      "OneSignal"
+    ]
+  },
+  {
     "id": "org.apache.cordova.geolocation.Coordinates",
     "file": "plugins/org.apache.cordova.geolocation/www/Coordinates.js",
     "pluginId": "org.apache.cordova.geolocation",
@@ -31,22 +39,14 @@ module.exports = [
     "clobbers": [
       "navigator.geolocation"
     ]
-  },
-  {
-    "id": "onesignal-cordova-plugin.OneSignal",
-    "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
-    "pluginId": "onesignal-cordova-plugin",
-    "clobbers": [
-      "OneSignal"
-    ]
   }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
   "cordova-plugin-whitelist": "1.3.3",
-  "org.apache.cordova.geolocation": "0.3.6",
-  "onesignal-cordova-plugin": "2.4.0"
+  "onesignal-cordova-plugin": "2.4.0",
+  "org.apache.cordova.geolocation": "0.3.6"
 };
 // BOTTOM OF METADATA
 });

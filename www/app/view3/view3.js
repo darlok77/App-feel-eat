@@ -33,11 +33,11 @@ $scope.updateMail= function(){
   $scope.isUpdateMail = true;
   var elMail = document.querySelector("#mailInput");
 
-  /*elMail.addEventListener ('keypress', e => {
+  elMail.addEventListener ('keypress', e => {
   if (e.keyCode === 13) {
     $scope.mail = elMail.value;
   }
-  });*/
+  });
   
 } 
 });

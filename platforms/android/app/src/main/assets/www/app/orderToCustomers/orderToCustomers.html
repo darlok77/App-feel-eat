@@ -1,0 +1,25 @@
+
+<div class="container-fluid" id="infoDeliver">
+  <div class="row">
+    <div class="col-md infoDelivereBody">
+      <input type="button" value="Showing map" ng-click="getCurrentPosition()">:
+      <iframe ng-if="showMap"
+              width="350" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBzhXQGlpp20V71dGCT_67REdUlWe-Gpog&origin={{latitude}},{{longitude}}&destination={{destLatitude}},{{destLongitude}}&avoid=tolls|highways" allowfullscreen>
+      </iframe>       {{bla}}
+      {{latitude}},{{longitude}}
+      {{destLatitude}},{{destLongitude}}
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md infoDeliverBody"> 
+      <img src="../components/asset/img/arrowdown.png">
+      <h2>19:20<h2>
+        <p>18 min</p>    
+        <h2>Commande n°XXXX</h2>    
+        <h2>Mr GuiGui le Dev</h2>
+        <p>12 rue de Cambrai</p>
+        <a href="#">iconTel</a><button type="button">Livrer</button> 
+    </div>        
+  </div>
+</div>        

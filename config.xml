@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="fr.phonegap.test1" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>test-phonegap2</name>
+    <name>fealEat</name>
     <preference name="android-minSdkVersion" value="16" />
     <description>
        A blank PhoneGap app.
@@ -11,5 +11,5 @@
     <content src="app/index.html" />
     <access origin="*" />
     <plugin name="org.apache.cordova.geolocation" spec="^0.3.6" />
-    <engine name="android" spec="7.0.0" />
+    <engine name="android" spec="^7.0.0" />
 </widget>
