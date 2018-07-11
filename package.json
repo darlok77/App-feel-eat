@@ -30,7 +30,6 @@
         "url": "https://github.com/darlok77/App-feel-eat/issues"
     },
     "dependencies": {
-        "angular-stripe": "^5.0.0",
         "angularfire": "^2.3.0",
         "cordova-android": "^7.0.0",
         "onesignal-cordova-plugin": "^2.4.0",

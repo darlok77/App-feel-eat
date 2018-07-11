@@ -9,6 +9,28 @@ angular.module('myApp.notifLivreur', ['ngRoute'])
   });
 }])
 
-.controller('notifLivreurCtrl', function($scope) {
+.controller('notifLivreurCtrl', function($scope,$rootScope) {
+  
+  const rootRef = firebase.database().ref(); // database root ref
+  const refOrders = rootRef.child('order');
+  
+  refOrders.on('value', function(snap){ //value = refresh all object
+    let nbOffer=0;
+    
+    for (let offer in snap.val()) {
+      nbOffer++
+    }
+    const refOrder = rootRef.child(nbOffer.toString());
+  });
+  
+   setTimeout(function(){  
+     refOrder.on('value', function(snap){ //value = refresh all object
+     $rootScope.order = snap.val();
+  });
+  }, 3000);
+ 
 
+  $scope.clickValidate = function() {
+    window.location.href = "#!/orderToCustomers";
+  }
 });

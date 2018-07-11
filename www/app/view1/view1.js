@@ -38,7 +38,7 @@ angular.module('myApp.view1', ['ngRoute'])
   
   refHobbies.on('child_added', function(snap){ //child_added = refresh just a element added
     const li = document.createElement('li');
-    li.innerText =snap.val();
+    li.innerText = snap.val();
     li.id = snap.key;
     document.querySelector('#list').appendChild(li);
     console.log( snap.val() ); 
@@ -46,7 +46,7 @@ angular.module('myApp.view1', ['ngRoute'])
   
   refHobbies.on('child_changed', function(snap){ //child_changed = refresh a element change
     const liChanged = document.querySelector('#'+snap.key);
-    liChanged.innerText =snap.val(); 
+    liChanged.innerText = snap.val(); 
     console.log( snap.val() ); 
   });
   

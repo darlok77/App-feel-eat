@@ -14,6 +14,10 @@ firebaseAuthService.factory('UserLog', function(){
         const auth = firebase.auth();
         const promise = auth.createUserWithEmailAndPassword(username,password);
         promise.catch(function(e) { console.log(e.message); });
+        
+        const promise2 = auth.signInWithEmailAndPassword(username,password);
+        promise2.catch(function(e) { console.log(e.message); });
+        
       },
       
       logOut: function () {

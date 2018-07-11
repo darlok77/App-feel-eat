@@ -13,22 +13,36 @@ angular.module('myApp.login', ['ngRoute','firebaseAuthService'])
 }])
  
 
-/*.factory('UserLog', function(){
+/*.factory('DB', function($firebaseObject){
+   
+ 
+  console.log('DB here');
     return {
-      user: function () {
-        return firebaseUser;
+      Menu: function () {
+        return menu;
+      },
+       Restaurants: function () {
+        return console.log(restaurants + 'laaaaaa');
+         ;
       }
     };
 })*/
 
-      //  
 
 .controller("LoginCtrl", function($scope,$rootScope,UserLog) {
+  
+  const rootRef = firebase.database().ref(); // database root ref
+  const refRestaurants = rootRef.child("restaurants");
+
+  
+
+ refRestaurants.on('value', function(snap){ //value = refresh all object
+    $rootScope.restaurantsDb = snap.val();
+  });
   
   $scope.logOut = function(event) {
     event.preventDefault();  // To prevent form refresh
     UserLog.logOut();
-    
   } 
   
   $scope.logIn = function(event) {
@@ -38,6 +52,7 @@ angular.module('myApp.login', ['ngRoute','firebaseAuthService'])
     
 
       UserLog.logIn(username,password);
+      $rootScope.showNavBar = true;
     
       switch ($rootScope.role) {
         case "restaurant":

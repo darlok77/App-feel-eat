@@ -1,12 +1,26 @@
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md homeTitle">
-                    <h1>Je suis ...</h1>
-                    <button type="button" class="champColor" ng-click="clickClient()">Client</button>
-                    <br>
-                    <button type="button" class="champColor" ng-click="clickdelivery()">Livreur</button>
-                    <br>
-                    <button type="button" class="champColor" ng-click="clickrestaurant()">Restaurateur</button>
-                </div>
-            </div> 
-        </div>        
+<!--<div class="container-fluid">
+  <div class="row">
+    <div class="col-md homeTitle">
+      <h1>Je suis ...</h1>
+      <button type="button" class="champColor"  ng-click="clickClient()">Client</button>
+      <br>
+      <button type="button" class="champColor" ng-click="clickDelivery()">Livreur</button>
+      <br>
+      <button type="button" class="champColor" ng-click="clickRestaurant()">Restaurateur</button>
+    </div>
+  </div> 
+</div> -->      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md homeTitle">
+      <h1>Je suis ...</h1>
+      <a ng-click="clickClient()"><img class="img-fluid homeIcon" src="../components/asset/img/customer.PNG"></a>
+      <br>
+      <a ng-click="clickDelivery()"><img class="img-fluid homeIcon" src="../components/asset/img/deliverer.PNG"></a>
+      <br>
+      <a ng-click="clickRestaurant()"><img class="img-fluid bottomIcon" src="../components/asset/img/restaurant.PNG"></a>
+    </div>
+  </div> 
+</div>        
+

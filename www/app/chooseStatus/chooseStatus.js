@@ -17,9 +17,8 @@ angular.module('myApp.chooseStatus', ['ngRoute'])
 $rootScope.role="";
 
 
-    $scope.clickrestaurant = function(){
+    $scope.clickRestaurant = function(){
       $rootScope.role = "restaurant";
-      $rootScope.showNavBar = true;
       window.location.href = "#!/login";
 
     }
@@ -31,7 +30,7 @@ $rootScope.role="";
 
     }
 
-    $scope.clickdelivery = function(){
+    $scope.clickDelivery = function(){
       $rootScope.role = "delivery";
       $rootScope.showNavBar = true;
       window.location.href = "#!/login";

@@ -1,6 +1,3 @@
-<!-- les passge commenter seront utililiser pour le front-->
-
-
 <div id="personalInfoDelivery" class="row">
   <div>
     <img style="max-width:5%" src="../components/asset/img/perso.png">
@@ -29,8 +26,7 @@
     </div>
     <div class="margTopBot">
       <label>MAIL</label>
-      <p id="mailP" ng-if="!isUpdateMail">{{mail}}</p> <!-- j'utilise le scope de angular pour teste sans angular commenter cette ligne et decommenter la suivante-->
-      <!--<p id="mailP" ng-if="!isUpdateMail">bla@bla.fr</p>-->
+      <p id="mailP" ng-if="!isUpdateMail">{{mail}}</p> 
       <input id="mailInput" type="text" ng-model="mail" ng-if="isUpdateMail">
       <span  class="updateImg" ng-click="updateMail()">modifier</span>
     </div>
@@ -38,25 +34,38 @@
       <label>N°SIRET</label>
       <p>154954512</p>
     </div>
-    <div id='test'></div> <!--ici je genere les etoile dans mon service angular elles apparaitront pas car il y a pas angular avec cette page--> 
+    <div id='test'></div> 
   </div>
-  <button type="button" class="btnValidate">log In</button>
-    
- 
-                <nav id="navBar"> 
-                    <ul>
-                        <li>
-                            <a href="#!/view3"><img src="../components/asset/img/profilicon20x20.png" class="img-fluid" alt=Profil></a>
-                        </li>
-                        <li class="middle">
-                            <a href="#!/orderHistory"><img src="../components/asset/img/commandeicon20x24.png" class="img-fluid" alt="commande"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="../components/asset/img/crayon20x20.png" alt="Menu"></a>
-                        </li>
-                    </ul>
-                </nav>
-               
+  <button type="button" class="btnValidate">log In</button>                
 </div>
+-------------------------------------------------------------------------------------------------------
 
+<div id="personalInfoDelivery" class="row">
+  <div class="profilHeader">
+    <img style="max-width:5%" src="../components/asset/img/perso.png">
 
+    <h1>Information Profil</h1>
+    <img class="img-fluid test" src="../components/asset/img/test.PNG"/>
+    <p>modifier</p>
+  </div>
+
+  <div class="margLeft20 row">
+    <div class="margTopBot">
+      <label>PRENOM</label>
+      <p>bob</p>
+        
+      <label>NOM</label>
+      <p>bob</p>
+      <label>MAIL</label>
+      <p id="mailP" ng-if="!isUpdateMail">{{mail}}</p> 
+      <input id="mailInput" type="text" ng-model="mail" ng-if="isUpdateMail">
+      <span  class="updateImg" ng-click="updateMail()">modifier</span>
+      <br>    
+
+      <label>N°SIRET</label>
+      <p>154954512</p>
+
+    <div id='test'></div> 
+         <button type="button" class="btnValidate">Valider</button>
+  </div>   
+</div>

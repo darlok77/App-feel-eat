@@ -4,22 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
     <title>Feal Eat</title>
-
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    
     <!-- AngularJS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
 
@@ -33,7 +18,11 @@
     <link rel="stylesheet" href="/components/asset/css/reset.css">
     <link rel="stylesheet" href="components/asset/css/boostrap/scss/bootstrap.min.css">  
     <link rel="stylesheet" href="components/asset/css/main.css">
-
+     
+     
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
   </head>
@@ -51,17 +40,17 @@
         <li><a href="#!/monResto">monResto</a></li>
         <li><a href="#!/paymentMethod">paymentMethod</a></li>
         <li><a href="#!/orderHistory">orderHistory</a></li>
-        <li><a href="#!/orderToResto">orderToResto</a></li>
         <li><a href="#!/profilPage">profilPage</a></li>
         <li><a href="#!/customerHome">customerHome</a></li>
         <li><a href="#!/customerSearch">customerSearch</a></li>
         <li><a href="#!/cardChange">cardChange</a></li>
         <li><a href="#!/recapOrder">recapOrder</a></li>
         <li><a href="#!/userRegister">userRegister</a></li>
-        <li><a href="#!/chooseStatus">chooseStatus</a></li>    
+        <li><a href="#!/chooseStatus">chooseStatus</a></li>
+        <li><a href="#!/notifLivreur">notifLivreur</a></li>      
       </ul>
       <div ng-view></div>
-
+  <br><br>
       <div class="row" ng-show="showNavBar">
         <nav id="navBar"> 
           <ul>
@@ -72,7 +61,10 @@
               <a href="#!/orderHistory"><img src="components/asset/img/commandeicon20x24.png" class="img-fluid" alt="commande"></a>
             </li>
             <li>
-              <a href="#!/monResto"><img src="components/asset/img/crayon20x20.png" alt="Menu"></a>
+              <a ng-if="role=='client'" href="#!/monResto"><img style="width:20px; height:20px;" src="components/asset/img/paniericon.png" alt="panier"></a>
+            </li>
+             <li>
+              <a ng-if="role=='restaurant'" href="#!/monResto"><img  src="components/asset/img/crayon20x20.png" alt="Menu"></a>
             </li>
           </ul>
         </nav>
@@ -80,13 +72,8 @@
     </div>
 
 
-
-    <!--
-<script src="bower_components/angular/angular.js"></script>
--->
-
     <script src="components/service/cordovaGeolocationModule.js"></script>
-    <script src="components/service/firebaseAuthService.js"></script>f
+    <script src="components/service/firebaseAuthService.js"></script>
     <script src="bower_components/angular-cordova-onesignal/angular-cordova-onesignal.js"></script>
 
     <script src="bower_components/angular-route/angular-route.js"></script>
@@ -97,7 +84,6 @@
     <script src="view3/view3.js"></script>
     <script src="forgotMdp/forgotMdp.js"></script>
     <script src="orderToCustomers/orderToCustomers.js"></script>
-    <script src="orderToResto/orderToResto.js"></script>
     <script src="customerSearch/customerSearch.js"></script>
     <script src="customerHome/customerHome.js"></script>
     <script src="profilPage/profilPage.js"></script>
@@ -109,6 +95,7 @@
     <script src="recapOrder/recapOrder.js"></script>
     <script src="userRegister/register.js"></script>  
     <script src="chooseStatus/chooseStatus.js"></script>
+    <script src="notifLivreur/notifLivreur.js"></script>
     <script type="text/javascript" src="components/service/genrerateListRating.js"></script>
   </body>
 </html>

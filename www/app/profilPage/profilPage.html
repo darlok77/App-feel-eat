@@ -1,44 +1,43 @@
 
-        <div class="container-fluid">
-            <div id="personalInfoDelivery">
-  <div class="center">
-    <img src="../components/asset/img/profilicon20x20.png">
-    <button type="button" ng-click="logOut($event)" >log out</button>
+<div class="container-fluid">
+  <div id="personalInfoDelivery">
+    <div class="center">
+      <img src="../components/asset/img/profilicon20x20.png">
+      <button type="button" ng-click="logOut($event)" >log out</button>
 
     <h1>Information Profil</h1>
     <img class="img-fluid test" src="../components/asset/img/test.PNG"/>
     <p>modifier</p>
-  </div>
+    </div>
 
-  <!--<div style="margin-left: 20%">
+    <!--<div style="margin-left: 20%">
 <div class="input-file-container">
 <label for="my-file" class="input-file-trigger" tabindex="0">Modifier</label>
 <input class="input-file" id="my-file" type="file" ng-click="uploadFile()">
 </div>
 </div>-->
-  <!--{{file}}-->
+    <!--{{file}}-->
 
-  <div class="margLeft20">
-    <div class="margTopBot">
-      <label>PRENOM</label>
-      <p>bob</p>
+    <div class="margLeft20">
+      <div class="margTopBot">
+        <label>PRENOM</label>
+        <p>bob</p>
+      </div>
+      <div class="margTopBot">
+        <label>NOM</label>
+        <p>bob</p>
+      </div>
+      <div class="margTopBot">
+        <label>MAIL</label>
+        <p id="mailP" ng-if="!isUpdateMail">{{mail}}</p>
+        <input id="mailInput" type="text" ng-model="mail" ng-if="isUpdateMail">
+        <span  class="updateImg" ng-click="updateMail()">modifier</span>
+      </div>
+      <div class="margTopBot">
+        <label>N°SIRET</label>
+        <p>154954512</p>
+      </div>
+      <div id='test'></div> 
     </div>
-    <div class="margTopBot">
-      <label>NOM</label>
-      <p>bob</p>
-    </div>
-    <div class="margTopBot">
-      <label>MAIL</label>
-      <p id="mailP" ng-if="!isUpdateMail">{{mail}}</p> <!-- j'utilise le scope de angular pour teste sans angular commenter cette ligne et decommenter la suivante-->
-      <!--<p id="mailP" ng-if="!isUpdateMail">bla@bla.fr</p>-->
-      <input id="mailInput" type="text" ng-model="mail" ng-if="isUpdateMail">
-      <span  class="updateImg" ng-click="updateMail()">modifier</span>
-    </div>
-    <div class="margTopBot">
-      <label>N°SIRET</label>
-      <p>154954512</p>
-    </div>
-    <div id='test'></div> <!--ici je genere les etoile dans mon service angular elles apparaitront pas car il y a pas angular avec cette page--> 
-  </div>
-  <button type="button" class="btnValidate">validate</button>
-</div>        
+    <button type="button" class="btnValidate">validate</button>
+  </div>     

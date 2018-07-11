@@ -1,4 +1,4 @@
-<div class="container-fluid" id="cardChangePage">
+<div class="container-fluid" id="cardChangePage" ng-if="IsRestaurant">
 
   <div class="row headerPrevious">
     <div class="col-md">    
@@ -7,10 +7,9 @@
       <h1>Mon restaurant <img src="../components/asset/img/crayon20x20.png" alt="pen" class="img-fluid"></h1>
     </div>    
   </div>
-
   <div class="row bodycard">
     <div class="col-md">
-      <h2>Côme</h2>
+      <h2>{{resto.nom}}</h2>
 
       <div class=imgResto>
         <img src="../components/asset/img/Resto1.PNG"  class="img-fluid" alt="RestoImg">
@@ -84,5 +83,104 @@
       </ul>
       <a class="addFood bottom" href="#">ajouter une boisson</a>
     </div>
-  </div>  
+  </div>
+  <div class="row">
+    <nav id="navBar"> 
+      <ul>
+        <li>
+          <a href="#!/view3"><img src="../components/asset/img/profilicon20x20.png" class="img-fluid" alt=Profil></a>
+        </li>
+        <li class="middle">
+          <a href="#!/orderHistory"><img src="../components/asset/img/commandeicon20x24.png" class="img-fluid" alt="commande"></a>
+        </li>
+        <li>
+          <a href="#!/monResto"><img src="../components/asset/img/crayon20x20.png" alt="Menu"></a>
+        </li>
+      </ul>
+    </nav>
+  </div>    
+</div>        
+<div class="container-fluid" id="cardChangePage" ng-if="!IsRestaurant">
+
+  <div class="row headerPrevious">
+    <div class="col-md">    
+      <a href="#!/customerSearch"> 
+        <img src="../components/asset/img/previous1.png"></a> 
+      <h1>Choisissez des produits</h1>
+    </div>    
+  </div>
+
+  <div class="row bodycard">
+    <div class="col-md">
+      <h2>{{resto.nom}}</h2>
+
+      <div class=imgResto>
+        <img ng-src="{{resto.img}}"  class="img-fluid" alt="RestoImg">
+      </div>    
+      <h3><span>Entrées</span></h3>
+      <img src="../components/asset/img/arrowdown.png" alt="arrowdown" class="img-fluid arrow">
+      <br>
+      <img ng-src="{{entrees.img}}" class="img-fluid">
+
+      <ul>
+        <li><p><span>{{entrees.plats[1].nom}}</span><span class="price">{{entrees.plats[1].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        </li>
+        <li><p><span>{{entrees.plats[2].nom}}</span><span class="price">{{entrees.plats[2].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        </li>
+        <li><p><span>{{entrees.plats[3].nom}}</span><span class="price">{{entrees.plats[3].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        </li>
+      </ul>
+    </div>
+  </div>    
+  <div class="row bodycard">
+    <div class="col-md">
+      <h3><span>Plats</span></h3>
+      <img src="../components/asset/img/arrowdown.png" alt="arrowdown" class="img-fluid arrow">
+      <br>
+      <img ng-src="{{plats.img}}" class="img-fluid">
+      <ul>
+        <li><p><span>{{plats.plats[1].nom}}</span><span class="price">{{plats.plats[1].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        </li>
+        <li><p><span>{{plats.plats[2].nom}}</span><span class="price">{{plats.plats[2].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        </li>
+        <li><p><span>{{plats.plats[3].nom}}</span><span class="price">{{plats.plats[3].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        </li>
+      </ul>
+    </div>
+  </div> 
+  <div class="row bodycard">
+    <div class="col-md">
+      <h3><span>Desserts</span></h3>
+
+      <img src="../components/asset/img/arrowdown.png" alt="arrowdown" class="img-fluid arrow">
+      <br>
+      <img ng-src="{{desserts.img}}" class="img-fluid">
+      <ul>
+        <li><p><span>{{desserts.plat[1].nom}}</span><span class="price">{{desserts.plat[1].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        </li>
+        <li><p><span>{{desserts.plat[2].nom}}</span><span class="price">{{desserts.plat[2].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        </li>
+        <li><p><span>{{desserts.plat[3].nom}}</span><span class="price">{{desserts.plat[3].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row bodycard">
+    <div class="col-md">
+      <h3><span>Boissons</span></h3>
+
+      <img src="../components/asset/img/arrowdown.png" alt="arrowdown" class="img-fluid arrow">
+      <br>
+      <img ng-src="{{boissons.img}}" class="img-fluid">
+
+      <ul>
+        <li><p><span>{{boissons.plats[1].nom}}</span><span class="price">{{boissons.plats[1].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        </li>
+        <li><p><span>{{boissons.plats[2].nom}}</span><span class="price">{{boissons.plats[2].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        </li>
+        <li><p><span>{{boissons.plats[3].nom}}</span><span class="price">{{boissons.plats[3].prix}}<a href="#"> <button type="button">+</button></a></span></p>
+        </li>
+      </ul>
+    </div>
+  </div>   
 </div>        

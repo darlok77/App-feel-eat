@@ -12,9 +12,9 @@
   </div>
   <div class="row customerHomeHeader">
     <div class="col-md customerHomeAdresse">
-      <input type="text" class="champColor" id="adresse" placeholder=" Adresse postale"><button type="button">Valider</button>  
+      <input type="text" class="champColor" id="adresse" placeholder=" Adresse postale"  ng-model="adress"><button type="button" ng-click="clickValidate()">Valider</button>  
       <br>
-      <a href="#!/customerSearch"><img src="../components/asset/img/mapgreen.PNG">Me localiser</a>
+      <div ng-click="clickGeoloc()"><img src="../components/asset/img/mapgreen.PNG">Me localiser</div>
     </div>
   </div>    
   <div class="row customerHomeBody">
@@ -22,34 +22,9 @@
       <h3>SUGGESTIONS</h3>
 
       <div class="customerHomeSugg" >
-        <img src="../components/asset/img/pictoclienthome.PNG" align="left">
-        <p>NOUS PARADIS + notes</p>
-        <p>bla blabla blabla blabla bla bla</p>
-        <p>TOUS LES JOURS : 8h-22h</p>    
-      </div>
-      <div class="customerHomeSugg">
-        <img src="../components/asset/img/pictoclienthome.PNG" align="left">
-        <p>NOUS PARADIS + notes</p>
-        <p>bla blabla blabla blabla bla bla</p>
-        <p>TOUS LES JOURS : 8h-22h</p>
-      </div>
-      <div class="customerHomeSugg">
-        <img src="../components/asset/img/pictoclienthome.PNG" align="left">
-        <p>NOUS PARADIS + notes</p>
-        <p>bla blabla blabla blabla bla bla</p>
-        <p>TOUS LES JOURS : 8h-22h</p>
-      </div>
-      <div class="customerHomeSugg">
-        <img src="../components/asset/img/pictoclienthome.PNG" align="left">
-        <p>NOUS PARADIS + notes</p>
-        <p>bla blabla blabla blabla bla bla</p>
-        <p>TOUS LES JOURS : 8h-22h</p>
-      </div>
-      <div class="customerHomeSugg">
-        <img src="../components/asset/img/pictoclienthome.PNG" align="left">
-        <p>NOUS PARADIS + notes</p>
-        <p>bla blabla blabla blabla bla bla</p>
-        <p>TOUS LES JOURS : 8h-22h</p>
+       
+        <p>Pas de suggestion pour le moment</p>
+        
       </div>
     </div>   
   </div>

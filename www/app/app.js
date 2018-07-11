@@ -21,7 +21,6 @@ angular.module('myApp', [
   'myApp.orderToCustomers',
   'myApp.login',
   'myApp.forgotMdp',
-  'myApp.orderToResto',
   'myApp.profilPage',
   'myApp.customerHome',
   'myApp.customerSearch',
@@ -32,10 +31,8 @@ angular.module('myApp', [
   'myApp.recapOrder',
   'myApp.userRegister',
   'myApp.chooseStatus',
+  'myApp.notifLivreur',
   'firebase',
-  
-  //'angular-stripe'
- // 'myApp.version'
 ])
 .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');

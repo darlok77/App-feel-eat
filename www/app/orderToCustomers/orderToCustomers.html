@@ -3,12 +3,7 @@
   <div class="row">
     <div class="col-md infoDelivereBody">
       <input type="button" value="Showing map" ng-click="getCurrentPosition()">:
-      <iframe ng-if="showMap"
-              width="350" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBzhXQGlpp20V71dGCT_67REdUlWe-Gpog&origin={{latitude}},{{longitude}}&destination={{destLatitude}},{{destLongitude}}&avoid=tolls|highways" allowfullscreen>
-      </iframe>       {{bla}}
-      {{latitude}},{{longitude}}
-      {{destLatitude}},{{destLongitude}}
-
+      <div class="iframe"></div>
     </div>
   </div>
   <div class="row">
@@ -16,10 +11,11 @@
       <img src="../components/asset/img/arrowdown.png">
       <h2>19:20<h2>
         <p>18 min</p>    
-        <h2>Commande n°XXXX</h2>    
-        <h2>Mr GuiGui le Dev</h2>
-        <p>12 rue de Cambrai</p>
-        <a href="#">iconTel</a><button type="button">Livrer</button> 
+        <h3>Commande n° {{order.id}}</h3>    
+        <p>Mr GuiGui le Dev</p>
+        <p>{{order.adress.nom}}</p>
+        <button ng-if="typeOffer == 'restaurant'" ng-click="clickRecovered()" type="button">Récupéré</button> 
+        <button ng-if="typeOffer == 'client'" ng-click="clickLivery()" type="button">Livrée</button>     
     </div>        
   </div>
 </div>        
