@@ -19,10 +19,8 @@
     <link rel="stylesheet" href="components/asset/css/boostrap/scss/bootstrap.min.css">  
     <link rel="stylesheet" href="components/asset/css/main.css">
      
-     
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="components/asset/css/boostrap/js/bootstrap.js"></script>
 
 
   </head>
@@ -30,7 +28,7 @@
   <body>
 
     <div class="container">
-      <ul class="menu">
+     <!-- <ul class="menu">
         <li><a href="#!/login">login</a></li>
         <li><a href="#!/view1">view1</a></li>
         <li><a href="#!/view2">view2</a></li>
@@ -48,24 +46,25 @@
         <li><a href="#!/userRegister">userRegister</a></li>
         <li><a href="#!/chooseStatus">chooseStatus</a></li>
         <li><a href="#!/notifLivreur">notifLivreur</a></li>      
-      </ul>
+      </ul>-->
       <div ng-view></div>
   <br><br>
       <div class="row" ng-show="showNavBar">
         <nav id="navBar"> 
           <ul>
             <li>
-              <a href="#!/profilPage"><img src="components/asset/img/profilicon20x20.png" class="img-fluid" alt=Profil></a>
-            </li>
-            <li class="middle">
-              <a href="#!/orderHistory"><img src="components/asset/img/commandeicon20x24.png" class="img-fluid" alt="commande"></a>
+              <a ng-if="role != 'restaurant'" href="#!/profilPage"><img src="components/asset/img/profilicon20x20.png" class="img-fluid" alt=Profil></a>
             </li>
             <li>
-              <a ng-if="role=='client'" href="#!/monResto"><img style="width:20px; height:20px;" src="components/asset/img/paniericon.png" alt="panier"></a>
+              <a ng-if="role=='restaurant'" href="#!/monResto"><img  src="components/asset/img/profilicon20x20.png" alt="Menu"></a>
             </li>
-             <li>
-              <a ng-if="role=='restaurant'" href="#!/monResto"><img  src="components/asset/img/crayon20x20.png" alt="Menu"></a>
+            <li class="middle">
+              <a href="#!/chooseStatus"><img src="components/asset/img/commandeicon20x24.png" class="img-fluid" alt="commande"></a>
             </li>
+            <li>
+              <a ng-if="role=='client'" href="#!/recapOrder"><img style="width:20px; height:20px;" src="components/asset/img/paniericon.png" alt="panier"></a>
+            </li>
+            
           </ul>
         </nav>
       </div>               

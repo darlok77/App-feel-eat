@@ -10,17 +10,18 @@
   <div class="row">        
     <div class="col-md restoDesc">
       <h3><span>Côme</span></h3>
-      <img src="../components/asset/img/nous%20paradis.png" class="img-fluid"><a href="#">modifier</a>
+      <img src="../components/asset/img/nous%20paradis.png" class="img-fluid">
+      <!--<a href="#">modifier</a>-->
 
     </div>
   </div>
   <div class="row">
     <div class="col-md restoEdit">
-      <p>Nom du resto + Note(1 à 5)</p>
-      <p>Description :</p>
-      <textarea autofocus>bla blabla blabla blabla bla bla blabla blabla blabla blabla blabla bla</textarea>
+      <p>{{restaurant[1].nom}}</p>
+      <p ng-click="changeDesc()">{{restaurant[1].description}}<p>
+      <br>
       <p id="restoEditPSpace">horaires d'ouvertures :</p>
-      <textarea autofocus>TOUS LES JOURS: 10h-18h</textarea>
+      <p ng-click="changehorraire()">{{restaurant[1].horraire}}<p>
     </div>
   </div> 
 </div> 

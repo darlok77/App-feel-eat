@@ -9,6 +9,7 @@ angular.module('myApp.monResto', ['ngRoute'])
   });
 }])
 
-.controller('monRestoCtrl', function($scope) {
+.controller('monRestoCtrl', function($scope,$rootScope) {
 
+  $scope.restaurant = $rootScope.restaurantsDb;
 });

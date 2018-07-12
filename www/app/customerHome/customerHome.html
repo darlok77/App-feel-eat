@@ -21,11 +21,28 @@
     <div class="col-md">
       <h3>SUGGESTIONS</h3>
 
-      <div class="customerHomeSugg" >
-       
-        <p>Pas de suggestion pour le moment</p>
-        
-      </div>
+        <div class="row bodycard">
+          <div class="col-md">
+            <h3><span>{{restaurant[1].nom}}</span></h3>
+            <img ng-src="{{restaurant[1].img}}" class="img-fluid" ng-click="selectRestaurant(restaurant[1])">    
+            <div class="restoDescCustomer" >
+              <p>{{restaurant[1].nom}}</p>
+              <p>{{restaurant[1].description}}</p>
+              <p>{{restaurant[1].horaire}}</p>    
+            </div>
+          </div>
+        </div>
+        <div class="row bodycard">
+          <div class="col-md">
+            <h3><span>{{restaurant[2].nom}}</span></h3>
+            <img ng-src="{{restaurant[2].img}}" class="img-fluid" ng-click="selectRestaurant(restaurant[2])">    
+            <div class="restoDescCustomer" >
+              <p>{{restaurant[2].nom}}</p>
+              <p>{{restaurant[2].description}}</p>
+              <p>{{restaurant[2].horaire}}</p>    
+            </div>
+          </div>
+        </div>
     </div>   
   </div>
 </div>        

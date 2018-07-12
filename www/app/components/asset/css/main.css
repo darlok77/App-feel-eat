@@ -12,6 +12,7 @@ src: url("../fonts/neutra-text-alt/neutra-text-bold-5871e1605afa2.woff") format(
     font-family:'FuturaMedium';
     src:url("../fonts/Futura-Medium.woff")format('woff');
 }
+
 html,body{
     font-family: 'FuturaMedium';
     height: 100%;
@@ -23,6 +24,9 @@ html,body{
     color:#2c4b43;
     font-family: 'FuturaMedium';
 
+}
+.buttonCard button{
+ 
 }
 #restoChangePage {
     text-transform: uppercase;
@@ -249,7 +253,9 @@ html,body{
 }
 .infoDeliverBody{
     text-align: center;
-
+}
+.rightButton{
+    text-align: right;
 }
 .infoDeliverBody button{
     display: flex;
@@ -257,10 +263,16 @@ html,body{
     background-color:#f8f8e7;
     color:#2c4b43;
     border: 0;
+   margin-bottom: 30px;
 }
 .infoDeliverBody a{
     display: flex;
     float:left;
+}
+.leftImageCustomer{
+    display:flex;
+    float:left;
+    padding-top: 10px;
 }
 .infoDeliverBody p{
     font-size: 10px;
@@ -307,7 +319,6 @@ html,body{
     font-weight: bold;
 }
 .customerHomeBody p{
-    padding-left: 40%;
     font-size: 10px;
     margin-bottom: 5px;
 }
@@ -468,11 +479,15 @@ html,body{
     color: #38463D;
 }
 .margLeft20{
-    margin-left: 20%
+    margin-left: 20%;
 }
+.profilHeader{
+    text-align: center;
+}
+
 .updateImg{
     font-style:italic;
-    font-size:small
+    font-size:small;
 }
 #personalInfoDelivery{
     background-color:#7bb194;
@@ -518,8 +533,12 @@ html,body{
     cursor: pointer;
 }
 .margTopBot{
-    margin-bottom: 10px;
-    margin-top: 10px; 
+    margin-bottom: 5px;
+    margin-top: 5px; 
+}
+.margTopBot label{
+    font-style: italic;
+
 }
 .btnValidate{
     margin-top: 10px;
@@ -597,9 +616,15 @@ html,body{
     color: #f8f8e7;
     text-align: center;
 }
+.homeIcon{
+    margin-bottom: 10%;   
+}
+.bottomIcon{
+    margin-bottom: 20%;
+}
 .homeTitle h1{
-    margin-bottom: 50%;
+    margin-bottom: 10%;
 }
 .homeTitle button{
-    margin-bottom: 20%;
+    margin-bottom: ;
 }

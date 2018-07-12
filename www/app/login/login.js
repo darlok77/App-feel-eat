@@ -56,13 +56,13 @@ angular.module('myApp.login', ['ngRoute','firebaseAuthService'])
     
       switch ($rootScope.role) {
         case "restaurant":
-          window.location.href = "#!/monResto";
+          window.location.href = "#!/recapOrder";
           break;
         case "client":
           window.location.href = "#!/customerHome";
           break;
         case "delivery":
-          window.location.href = "#!/customerHome";
+          window.location.href = "#!/notifLivreur";
           break;
         default:
           window.location.href = "#!/chooseStatus";

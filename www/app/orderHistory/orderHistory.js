@@ -9,6 +9,13 @@ angular.module('myApp.orderHistory', ['ngRoute'])
   });
 }])
 
-.controller('orderHistoryCtrl', function($scope) {
+.controller('orderHistoryCtrl', function($scope, $rootScope) {
+  
+  $scope.order = $rootScope.order;
+  
+   $scope.clickRecovered = function(){
+    $scope.mapToResto('client');
+    
+  }
 
 });

@@ -99,7 +99,10 @@
       </ul>
     </nav>
   </div>    
-</div>        
+</div>  
+
+ <!--parti client-->
+  
 <div class="container-fluid" id="cardChangePage" ng-if="!IsRestaurant">
 
   <div class="row headerPrevious">
@@ -123,11 +126,11 @@
       <img ng-src="{{entrees.img}}" class="img-fluid">
 
       <ul>
-        <li><p><span>{{entrees.plats[1].nom}}</span><span class="price">{{entrees.plats[1].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        <li><p><span>{{entrees.plats[1].nom}}</span><span class="price">{{entrees.plats[1].prix}}€<button ng-click="dataToMoal(entrees.plats[1].nom, entrees.plats[1].prix,'entrees')" type="button" data-toggle="modal" data-target="#myModal1">+</button></span></p>
         </li>
-        <li><p><span>{{entrees.plats[2].nom}}</span><span class="price">{{entrees.plats[2].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        <li><p><span>{{entrees.plats[2].nom}}</span><span class="price">{{entrees.plats[2].prix}}€<button ng-click="dataToMoal(entrees.plats[2].nom, entrees.plats[2].prix,'entrees')" type="button" data-toggle="modal" data-target="#myModal1">+</button></span></p>
         </li>
-        <li><p><span>{{entrees.plats[3].nom}}</span><span class="price">{{entrees.plats[3].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        <li><p><span>{{entrees.plats[3].nom}}</span><span class="price">{{entrees.plats[3].prix}}€ <button ng-click="dataToMoal(entrees.plats[3].nom, entrees.plats[3].prix,'entrees')" type="button" data-toggle="modal" data-target="#myModal1">+</button></span></p>
         </li>
       </ul>
     </div>
@@ -139,11 +142,11 @@
       <br>
       <img ng-src="{{plats.img}}" class="img-fluid">
       <ul>
-        <li><p><span>{{plats.plats[1].nom}}</span><span class="price">{{plats.plats[1].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        <li><p><span>{{plats.plats[1].nom}}</span><span class="price">{{plats.plats[1].prix}}€<button ng-click="dataToMoal(plats.plats[1].nom,plats.plats[1].prix,'plats')" type="button" data-toggle="modal" data-target="#myModal1">+</button></span></p>
         </li>
-        <li><p><span>{{plats.plats[2].nom}}</span><span class="price">{{plats.plats[2].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        <li><p><span>{{plats.plats[2].nom}}</span><span class="price">{{plats.plats[2].prix}}€<button ng-click="dataToMoal(plats.plats[2].nom,plats.plats[2].prix,'plats')" type="button" data-toggle="modal" data-target="#myModal1">+</button></span></p>
         </li>
-        <li><p><span>{{plats.plats[3].nom}}</span><span class="price">{{plats.plats[3].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        <li><p><span>{{plats.plats[3].nom}}</span><span class="price">{{plats.plats[3].prix}}€<button ng-click="dataToMoal(plats.plats[3].nom,plats.plats[3].prix,'plats')" type="button" data-toggle="modal" data-target="#myModal1">+</button></span></p>
         </li>
       </ul>
     </div>
@@ -156,11 +159,11 @@
       <br>
       <img ng-src="{{desserts.img}}" class="img-fluid">
       <ul>
-        <li><p><span>{{desserts.plat[1].nom}}</span><span class="price">{{desserts.plat[1].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        <li><p><span>{{desserts.plat[1].nom}}</span><span class="price">{{desserts.plat[1].prix}}€<button ng-click="dataToMoal(desserts.plat[1].nom,desserts.plat[1].prix,'desserts')" type="button" data-toggle="modal" data-target="#myModal1">+</button></span></p>
         </li>
-        <li><p><span>{{desserts.plat[2].nom}}</span><span class="price">{{desserts.plat[2].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        <li><p><span>{{desserts.plat[2].nom}}</span><span class="price">{{desserts.plat[2].prix}}€<button ng-click="dataToMoal(desserts.plat[2].nom,desserts.plat[2].prix,'desserts')" type="button" data-toggle="modal" data-target="#myModal1">+</button></span></p>
         </li>
-        <li><p><span>{{desserts.plat[3].nom}}</span><span class="price">{{desserts.plat[3].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        <li><p><span>{{desserts.plat[3].nom}}</span><span class="price">{{desserts.plat[3].prix}}€<button ng-click="dataToMoal(desserts.plat[3].nom,desserts.plat[3].prix,'desserts')" type="button" data-toggle="modal" data-target="#myModal1">+</button></span></p>
         </li>
       </ul>
     </div>
@@ -174,13 +177,47 @@
       <img ng-src="{{boissons.img}}" class="img-fluid">
 
       <ul>
-        <li><p><span>{{boissons.plats[1].nom}}</span><span class="price">{{boissons.plats[1].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        <li><p><span>{{boissons.plats[1].nom}}</span><span class="price">{{boissons.plats[1].prix}}€<button ng-click="dataToMoal(boissons.plats[1].nom,boissons.plats[1].prix,'boissons')" type="button" data-toggle="modal" data-target="#myModal1">+</button></span></p>
         </li>
-        <li><p><span>{{boissons.plats[2].nom}}</span><span class="price">{{boissons.plats[2].prix}}<a href="#"> <button type="button">+</button></a> </span></p>
+        <li><p><span>{{boissons.plats[2].nom}}</span><span class="price">{{boissons.plats[2].prix}}€<button ng-click="dataToMoal(boissons.plats[2].nom,boissons.plats[2].prix,'boissons')" type="button" data-toggle="modal" data-target="#myModal1">+</button></span></p>
         </li>
-        <li><p><span>{{boissons.plats[3].nom}}</span><span class="price">{{boissons.plats[3].prix}}<a href="#"> <button type="button">+</button></a></span></p>
+        <li><p><span>{{boissons.plats[3].nom}}</span><span class="price">{{boissons.plats[3].prix}}€<button ng-click="dataToMoal(boissons.plats[3].nom,boissons.plats[3].prix,'boissons')" type="button" data-toggle="modal" data-target="#myModal1">+</button></span></p>
         </li>
       </ul>
     </div>
-  </div>   
-</div>        
+  </div> 
+    <button ng-click="validateOrder()" type="button" >Valier la commande</button>
+</div>  
+
+<!--ng-click="dataToMoal(boissons.plats[1].nom,boissons.plats[1].prix)"-->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal1" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="container-fluid addMenu">
+        <div class="row addMenuHeader">
+          <div class="col-md">
+            <a href="#"><img class="resize_fit_center" src="../../../components/asset/img/crayon20x20.png"></a>
+          </div>
+        </div>
+        <div class="row addMenuBody">
+          <div class="col-md">
+            <a href='#'><img class="imgProduct" src="../../../components/asset/img/Plat.PNG"></a>
+            <h2>{{nomPlat}}</h2>
+            <ul>
+              <li><p><span>Prix:</span><span class="price">{{prixPlat}}€</span></p></li> 
+            </ul>    
+          </div>
+        </div>
+        <div class="row addMenuFooter">
+          <div class="col-md">
+            <button type="button" class="champColor2" ng-click="addShop()" data-dismiss="modal">Ajouter au panier</button>
+          </div>
+        </div>
+      </div>   
+    </div>         
+  </div>
+</div>

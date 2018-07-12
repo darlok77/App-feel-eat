@@ -20,12 +20,13 @@ angular.module('myApp.notifLivreur', ['ngRoute'])
     for (let offer in snap.val()) {
       nbOffer++
     }
-    const refOrder = rootRef.child(nbOffer.toString());
+    const refOrder = rootRef.child(nbOffer);
   });
   
    setTimeout(function(){  
      refOrder.on('value', function(snap){ //value = refresh all object
      $rootScope.order = snap.val();
+       alert("b");
   });
   }, 3000);
  
